@@ -1,11 +1,6 @@
-const express = require("express");
 const repo = require("./repository");
 const router = require('express').Router();
 const withAuth = require('../../utils/auth');
-
-const apiRoutes = require('./api');
-
-router.use('/api', apiRoutes);
 
 router.post('/home', async (req,res) => {
     res.render('home')
@@ -19,21 +14,8 @@ router.post('/dashboard', async (req,res) => {
     res.render('dashboard')
 });
 
-module.exports = router;
-
-const app = express();
-
-const port = process.env.PORT || 3000;
-
-//querry selector input type=radio::checked
-
-// The body-parser middleware
-// to parse form data
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
 // Get route to display HTML form
-app.get("/add", (req, res) => {
+router.get("/add", (req, res) => {
   res.send(`
     <div>
       <form method='POST'>
@@ -89,7 +71,7 @@ app.get("/add", (req, res) => {
 
 // Post route to handle form submission
 // logic and add data to the database
-app.post("/add", async (req, res) => {
+router.post("/add", async (req, res) => {
   const { location, weather, food, active } = req.body;
   console.log(req.body)
 
@@ -112,7 +94,4 @@ app.post("/add", async (req, res) => {
   );
 });
 
-// Server setup
-app.listen(port, () => {
-  console.log(`Server start on port ${port}`);
-});
+module.exports = router;

@@ -39,7 +39,6 @@ router.get('/', withAuth, async (req, res) => {
         res.status(500).json(err);
     }
 });
-=======
 // CREATE a new activity
 router.post('/', withAuth, async (req,res) => {
     // try {
