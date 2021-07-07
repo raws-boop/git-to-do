@@ -8,7 +8,6 @@ router.get('/', withAuth, async (req, res) => {
         res.redirect('/home');
     } else {
 
-    
     } try {
       // Get all activites, sorted by ascending location
       const activityData = await Activities.findAll({
@@ -25,7 +24,11 @@ router.get('/', withAuth, async (req, res) => {
 
 // GET user specified activities
 router.get('/', withAuth, async (req, res) => {
-    try {
+    if (!req.session.loggedIn) {
+        res.redirect('/home');
+    } else {
+
+    } try {
         // TODO: Add route to return activities based on checkboxes
         const userActivityData = await Activities.find( ({ DBITEM }) => VALUE === 'VALUE' );
 
