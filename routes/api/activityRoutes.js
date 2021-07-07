@@ -23,18 +23,15 @@ router.get('/', withAuth, async (req, res) => {
   });
 
 // GET user specified activities
-router.get('/', withAuth, async (req, res) => {
-    if (!req.session.loggedIn) {
-        res.redirect('/home');
-    } else {
-
-    } try {
+router.get('/search', async (req, res) => {
+     try {
         // TODO: Add route to return activities based on checkboxes
-        const userActivityData = await Activities.find( ({ DBITEM }) => VALUE === 'VALUE' );
+        console.log("search request", req.query);
+        // const userActivityData = await Activities.find( ({ DBITEM }) => VALUE === 'VALUE' );
 
-        const userActivites = userActivityData.map((activity) => activity.get({ plain: true }));
+        // const userActivites = userActivityData.map((activity) => activity.get({ plain: true }));
 
-        res.render('home', { users });
+        res.json({msg:"howdy"});
     } catch (err) {
         res.status(500).json(err);
     }
