@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: url("https://www.shutterstock.com/image-vector/people-performing-sports-activities-exercise-wholesome-1402482545");
+  background-image: url("https://unsplash.com/photos/Bw34iRCgmE4");
   -moz-box-shadow: inset 10px 10px 50px #fff;
   -webkit-box-shadow: inset 10px 10px 50px #fff;
   box-shadow: inset 10px 10px 50px #fff;
@@ -34,7 +34,7 @@ body {
 
 .left::before {
   content: "";
-  background-image: url("https://www.shutterstock.com/image-vector/people-performing-sports-activities-exercise-wholesome-1402482545");
+  background-image: url("https://www.shutterstock.com/image-vector/sport-logo-design-434404660");
   background-size: cover;
   position: absolute;
   top: 0px;
