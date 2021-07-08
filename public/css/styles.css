@@ -123,6 +123,12 @@ input {
     text-align:center;
 
 }
+
+.switch {
+  align-self: flex-end;
+  margin: 0.9375rem;
+}
+
 .inner-switch {
     display: inline-block;
     cursor: pointer;
