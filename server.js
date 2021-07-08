@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(require('./controller/'));
+//app.use(require('./controller/'));
 app.use(require('./routes'));
 
 app.listen(PORT, () => {
