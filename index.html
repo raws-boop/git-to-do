@@ -1,34 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>git-to-do</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/landingPage.css">
-</head>
-
-<body>
-    
-   <script src="assets/js/foodapi.js"></script> 
-
-    <header id="showcase">
-        <h1>git-to-do</h1>
-        <p>You might find the activity you love near you.</p>
-        <a href="./results.html" class="button">CLICK HERE TO ENTER</a>
-
-        <div id= "activity"></div>
-
-    </header>
-      
-    <footer id="section-a">
-        <p>Created by an amazing team consisting of: <a href="https://github.com/alicewaweru28">Alice Waweru</a>, <a href="https://github.com/cknig00q">Chase</a>,  <a href="https://github.com/nathanknguyen">Nathan Nguyen</a>, <a href="https://github.com/raws-boop">Ross Holtrop</a>
-            Hope our site helped you find the right activity near you!</p>
-    </footer>
-          
-          
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     
-</body>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Login Form Tutorial</title>
+   <style>
+   .login-form {
+     width: 300px;
+     margin: 0 auto;
+     font-family: Tahoma, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+   }
+   .login-form input[type="submit"] {
+     width: 100%;
+     padding: 15px;
+     background-color: #13C4AC;
+     border: 1;
+     box-sizing: border-box;
+     cursor: pointer;
+     font-weight: bold;
+     color: #52158B;
+   }
+       .login-form h1 {
+     text-align: center;
+     color: #8A1E84;
+     font-size: 20px;
+     padding: 20px 0 20px 0;
+   }
+   .login-form input[type="password"],
+   .login-form input[type="text"] {
+     width: 100%;
+     padding: 15px;
+     border: 1px solid #187AA7;
+     margin-bottom: 12px;
+     box-sizing:border-box;
+   }
+   </style>
+ </head>
+ <body>
+   <div class="login-form">
+     <h1>Login Form</h1>
+     <form action="auth" method="POST">
+       <input type="text" name="username" placeholder="Username" required>
+       <input type="password" name="password" placeholder="Password" required>
+       <input type="submit">
+     </form>
+   </style>
+   </div>
+ </body>
 </html>

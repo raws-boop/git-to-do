@@ -1,23 +1,22 @@
 body {
-    font-family: Arial;
-    color: black;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
- }
-
+  font-family: Arial;
+  color: black;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
 
 .header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-image: url("https://www.shutterstock.com/image-vector/people-performing-sports-activities-exercise-wholesome-1402482545");
-    -moz-box-shadow: inset 10px 10px 50px #fff;
-    -webkit-box-shadow: inset 10px 10px 50px #fff;
-    box-shadow: inset 10px 10px 50px #fff;
-    color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url("https://unsplash.com/photos/Bw34iRCgmE4");
+  -moz-box-shadow: inset 10px 10px 50px #fff;
+  -webkit-box-shadow: inset 10px 10px 50px #fff;
+  box-shadow: inset 10px 10px 50px #fff;
+  color: white;
 }
 
 .left {
@@ -25,102 +24,93 @@ body {
   width: 30%;
   position: relative;
   overflow-x: hidden;
-
 }
 
 .row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
- .left::before {    
-    content: "";
-    background-image: url('https://www.shutterstock.com/image-vector/people-performing-sports-activities-exercise-wholesome-1402482545');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    opacity: 0.6;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+.left::before {
+  content: "";
+  background-image: url("https://www.shutterstock.com/image-vector/sport-logo-design-434404660");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  opacity: 0.6;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .leftColContent {
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    position: relative;
-
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
+.right {
+  height: 550px;
+  width: 50%;
+  position: relative;
+  overflow-x: hidden;
 
- .right {
-    height: 550px;
-    width: 50%;
-    position: relative;
-    overflow-x: hidden;
+  background-image: url("https://www.shutterstock.com/image-vector/world-health-day-vector-tempale-leading-1377615650");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-    background-image: url('https://www.shutterstock.com/image-vector/world-health-day-vector-tempale-leading-1377615650');
-    background-size: cover;
-    background-repeat: no-repeat;
-    
- }
-
-
- #map {
-    height: 100%;
-  }
-
+#map {
+  height: 100%;
+}
 
 .pretty {
-    font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
+@media screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+  }
+  .row {
+    width: 100%;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+}
 
-
- @media screen and (max-width:600px) {
-    .header {
-      width: 100%;
-     }
-     .row {
-         width: 100%;
-     }
-    .left {
-      width: 100%;
-
-    }
-    .right {
-        width: 100%;
-      }
-    }
-
- /*Start of main */
+/*Start of main */
 input {
-    position: relative;
-    border: inset;
-    padding: 10px;
-    border-color: darkblue #1e72ec darkblue #1e72ec;
-    font-size: 20px;
-    color: blueviolet;
-  }
+  position: relative;
+  border: inset;
+  padding: 10px;
+  border-color: darkblue #1e72ec darkblue #1e72ec;
+  font-size: 20px;
+  color: blueviolet;
+}
 
-  i :hover {
-    background:yellow;
-    color: black;
-  }
-  
-  i {
-    font-size: 50px;
-    margin: 15px;
-    color: #1e72ec;
-  }
-  
-  #section-a {
-    padding:45px;
-    background: darkblue;
-    color: #fff;
-    text-align:center;
+i :hover {
+  background: yellow;
+  color: black;
+}
+
+i {
+  font-size: 50px;
+  margin: 15px;
+  color: #1e72ec;
+}
+
+#section-a {
+  padding: 45px;
+  background: darkblue;
+  color: #fff;
+  text-align: center;
 
 }
 
@@ -128,22 +118,21 @@ input {
   align-self: flex-end;
   margin: 0.9375rem;
 }
-
 .inner-switch {
-    display: inline-block;
-    cursor: pointer;
-    border: 1px solid #555;
-    border-radius: 1.25rem;
-    width: 3.125rem;
-    text-align: center;
-    font-size: 1rem;
-    padding: 0.1875rem;
-    margin-left: 0.3125rem;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #555;
+  border-radius: 1.25rem;
+  width: 3.125rem;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.1875rem;
+  margin-left: 0.3125rem;
 }
 
 .dark,
 .dark * {
-    background-color: #222;
-    color: #e6e6e6;
-    border-color: #e6e6e6;
+  background-color: #222;
+  color: #e6e6e6;
+  border-color: #e6e6e6;
 }
