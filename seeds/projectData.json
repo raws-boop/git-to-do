@@ -1,0 +1,23 @@
+[
+  {
+    "location": "Seattle",
+    "category": "restuarant",
+    "indoor_outdoor": "indoor",
+    "food_drink": "Carribean",
+    "description": "Carribean food"
+  },
+  {
+    "location": "Seattle",
+    "category": "restuarant",
+    "indoor_outdoor": "indoor",
+    "food_drink": "Rum Chatta",
+    "description": "Mexican food"
+  },
+  {
+    "location": "Seattle",
+    "category": "landmark",
+    "indoor_outdoor": "outdoor",
+    "food_drink": "Bruce Lee and Brandon Lee grave sites",
+    "description": "memorial"
+  }
+]

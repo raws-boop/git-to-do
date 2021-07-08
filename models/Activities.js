@@ -22,11 +22,7 @@ Activities.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
-    food: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    drink: {
+    food_drink: {
       type: DataTypes.STRING,
       allowNull: false,
     },
