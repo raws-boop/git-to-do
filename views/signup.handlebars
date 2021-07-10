@@ -1,0 +1,54 @@
+<div class="contoiner row">
+  <h2 class=>Create A New Account</h2>
+  <hr />
+    <div class="inputwrap mt-2">
+      <label for="name-signup">Name:</label>
+
+      <input
+        type="text"
+        placeholder="e.g. sample"
+        id="name-signup"
+        class="form-control"
+    </div>
+    
+      <div class="inputwrap mt-2">
+      <label for=>Email:</label>
+      <input
+        type="text"
+        placeholder="sample@sample.com"
+        id="email-signup"
+        class="form-control"
+    </div>
+
+    <div class="inputwrap mt-2">
+      <label for=>Password:</label>
+      <input
+        type="password"
+        placeholder="Create password"
+        id="password-signup"
+        class="form-control"
+    </div>
+
+    <div class="inputwrap mt-2">
+      <label for=>Confirm password:</label>
+      <input
+        type="password"
+        placeholder="Confirm Password"
+        id="confirm_password"
+        class="form-control"
+        required
+      />
+      <div class="invalid-feedback">
+        Password needs to match
+      </div>
+    </div>
+
+<div>
+      <button type="submit" class="button mt-3 mb-3 rounded text-secondary shadow btn-warning">
+        Create Account
+      </button>
+    </div>
+  </form>
+</div>
+
+<script src="/public/js/signup.js"></script>
